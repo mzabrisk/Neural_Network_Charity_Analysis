@@ -33,7 +33,7 @@ When testing the initial model, before adding the NAME column back in, I used 2 
 
 After reintroducing the NAME column, and bucketing all occurences <10, I used 2 layers, with 128 neurons in the 1st layer, and 64 layers in the second. The two hidden layers used the relu activation function, and the output layer used the sigmoid function. After applying OneHotEncoder and dropping the source columns, there were 264 features. The same rules of thumb as above were applied here. 78.6% accuracy was achieved with this model.
 
-![](https://github.com/mzabrisk/Neural_Network_Charity_Analysis/blob/61c0fff5f3d709143352aadf17c76279e5aa7ee4/images/sumary_final_model.png)
+![](https://github.com/mzabrisk/Neural_Network_Charity_Analysis/blob/b373998f00c1cc725d16c79c31b51702bc4566cc/images/summary_intermediate_model.png)
 
 For further optimization, the keras tuner was applied to the dataset, which let to the 78.6% accuracy. The final model used relu activation, and had two layers each with 18 neurons. It achieved 79.0% accuracy.
 
